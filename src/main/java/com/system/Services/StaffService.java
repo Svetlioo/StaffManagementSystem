@@ -84,6 +84,7 @@ public class StaffService implements Service<Employee>, JsonSerializable<Employe
 
     @Override
     public void delete(long id) {
+        System.out.printf("Employee %s with id %d has been fired :(%n", employeeMap.get(id).getName(), employeeMap.get(id).getId());
         employeeMap.remove(id);
     }
 
